@@ -1,0 +1,11 @@
+Introduction & GitHub Repository Setup
+Project Template creation
+Project Setup & requiements installation
+Logging, utils & Exception Module
+Project Workflows
+All Components Notebook Experiment (** For testing purposes)
+All Components Modular Code Implementation
+Training Pipeline
+Prediction Pipeline & User App creation
+Final CI/CD deployment on AWS
+
