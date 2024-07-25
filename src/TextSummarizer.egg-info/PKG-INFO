@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: TextSummarizer
+Version: 0.0.0
+Summary: A app for text-summarization in NLP 
+Home-page: https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}
+Author: santosh589
+Author-email: santosh159@gmail.com
+Project-URL: Bug Tracker, https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues
+License-File: LICENSE
+
+# Text-Summarization_NLP
