@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Metadata-Version: 2.4
+=======
+Metadata-Version: 2.1
+>>>>>>> 93eb97f6b321e8bd5c4f49bb0112f863f5588d6c
 Name: TextSummarizer
 Version: 0.0.0
 Summary: A app for text-summarization in NLP 
@@ -7,6 +11,7 @@ Author: santosh589
 Author-email: santosh159@gmail.com
 Project-URL: Bug Tracker, https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues
 License-File: LICENSE
+<<<<<<< HEAD
 Dynamic: author
 Dynamic: author-email
 Dynamic: description
@@ -14,5 +19,7 @@ Dynamic: home-page
 Dynamic: license-file
 Dynamic: project-url
 Dynamic: summary
+=======
+>>>>>>> 93eb97f6b321e8bd5c4f49bb0112f863f5588d6c
 
 # Text-Summarization_NLP
