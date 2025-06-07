@@ -183,3 +183,937 @@ Source-Age: 275
 [2025-06-06 17:53:06,150: INFO: main: <<< Step Data Validation step completed >>
 
 >]
+[2025-06-07 10:55:19,198: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 11:12:33,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 11:12:33,134: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 11:12:33,136: INFO: common: created directory at: artifacts]
+[2025-06-07 11:12:33,139: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 11:14:12,704: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 11:14:12,707: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 11:14:12,709: INFO: common: created directory at: artifacts]
+[2025-06-07 11:14:12,711: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 11:33:13,292: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 11:33:13,583: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 11:33:13,585: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 11:33:13,586: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 11:33:13,587: INFO: common: created directory at: artifacts]
+[2025-06-07 11:33:13,589: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 11:33:14,144: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_ingestion_1.py", line 14, in main
+    data_ingestion.download_file()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_ingestion.py", line 19, in download_file
+    filename, headers = request.urlretrieve(
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2025-06-07 11:44:40,765: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 11:44:41,039: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 11:44:41,039: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 11:44:41,039: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 11:44:41,039: INFO: common: created directory at: artifacts]
+[2025-06-07 11:44:41,039: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 11:44:41,769: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Date: Sat, 07 Jun 2025 06:14:42 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With,Accept-Encoding, Accept, X-Requested-With
+x-repository-download: git clone https://github.com/santosh589/Datasets.git
+x-raw-download: https://raw.githubusercontent.com/santosh589/Datasets/main/samsum_dataset.zip
+ETag: W/"d4b42dc12a32ad97bd94ae2f40101670"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Server: github.com
+Accept-Ranges: bytes
+Set-Cookie: _gh_sess=ZB2UBxM6tNER1UY2QRDae2LynyrpGeuY%2F06i05fqcTklK%2BrXoWfEDqK2oLmdgqZ51gotenAczTD4hN0yhKne%2BLNy3jXOhUvUoICA2%2BFxkqrabJMjkp1LT0XaPqq%2B1Tud1BsD28fnudZngdcRAs4wFo9XIBBBkS7M3RBQNDbsWjIGuuWxn1zN5BiMyq7GI0dH%2BVcCM12l%2BdQ%2BB64TftwcjUAxaJQrkeN90XjMyZjjFY%2B7r%2FcFo%2F9QvpLaBQZSF1%2BhKP7n2lFGFw0K1t2pGazOvg%3D%3D--OB9M67zH2giR8vw2--hDH%2FXw5PVTZNrvxbzKaFeQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1714339073.1749276882; Path=/; Domain=github.com; Expires=Sun, 07 Jun 2026 06:14:42 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sun, 07 Jun 2026 06:14:42 GMT; HttpOnly; Secure; SameSite=Lax
+X-GitHub-Request-Id: FBE7:12C5C5:643B4A:8361D0:6843D8D2
+connection: close
+Transfer-Encoding: chunked
+
+]
+[2025-06-07 11:44:41,769: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_ingestion_1.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_ingestion.py", line 33, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1258, in __init__
+    self._RealGetContents()
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1325, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-06-07 11:49:35,155: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 11:49:35,410: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 11:49:35,410: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 11:49:35,410: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 11:49:35,410: INFO: common: created directory at: artifacts]
+[2025-06-07 11:49:35,410: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 11:49:35,410: INFO: data_ingestion:  File already exist of size: ~ 174 KB]
+[2025-06-07 11:49:35,410: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_ingestion_1.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_ingestion.py", line 33, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1258, in __init__
+    self._RealGetContents()
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1325, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-06-07 11:59:04,526: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 11:59:04,791: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 11:59:04,791: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 11:59:04,791: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 11:59:04,791: INFO: common: created directory at: artifacts]
+[2025-06-07 11:59:04,791: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 11:59:05,496: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Date: Sat, 07 Jun 2025 06:29:06 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With,Accept-Encoding, Accept, X-Requested-With
+x-repository-download: git clone https://github.com/santosh589/Datasets.git
+x-raw-download: https://raw.githubusercontent.com/santosh589/Datasets/main/Dataset.zip
+ETag: W/"e55971060daef1a360542614290fa1ab"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Server: github.com
+Accept-Ranges: bytes
+Set-Cookie: _gh_sess=ab0x5APuZU0nWc1c4Zdin%2B2MHhNhk8bmkNjTpj%2BVpzbMgTUif3EsY%2BPDBsUs1o8hDc6M2nYdxfX6TWpQy2jKxzGY4i8iii%2BRMALOfS%2BTypBu9JlSbxZ%2FDBcguckC4f4MN650smNXtxdHGUyAchAUFf4mXh%2BDxFPQh5IHBJByHd6L5yCRkpDsrRi8uRr1NKmJJM4InhQ7zgHXvC%2Bzbv1a2Qsiqnjo8FZ96bedzqBovGeJCedii1BqjR5zrJU9JONZ8EmiT39IMY%2F9uVdV4XXMsQ%3D%3D--G7Q1S5%2FPHNkdOius--dHG78Cm7ol8Wnsn4uV4P3Q%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1757133169.1749277746; Path=/; Domain=github.com; Expires=Sun, 07 Jun 2026 06:29:06 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sun, 07 Jun 2026 06:29:06 GMT; HttpOnly; Secure; SameSite=Lax
+X-GitHub-Request-Id: C0FD:12C5C5:663077:85C850:6843DC32
+connection: close
+Transfer-Encoding: chunked
+
+]
+[2025-06-07 11:59:05,497: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_ingestion_1.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_ingestion.py", line 33, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1258, in __init__
+    self._RealGetContents()
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1325, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-06-07 12:02:05,371: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 12:02:05,642: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 12:02:05,642: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:02:05,642: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:02:05,642: INFO: common: created directory at: artifacts]
+[2025-06-07 12:02:05,642: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 12:02:05,642: INFO: data_ingestion:  File already exist of size: ~ 174 KB]
+[2025-06-07 12:02:05,642: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_ingestion_1.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_ingestion.py", line 33, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1258, in __init__
+    self._RealGetContents()
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\zipfile.py", line 1325, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-06-07 12:02:32,599: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 12:02:32,902: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 12:02:32,905: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:02:32,905: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:02:32,905: INFO: common: created directory at: artifacts]
+[2025-06-07 12:02:32,905: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 12:02:34,960: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3E72:3F9B62:1E30A:4051B:6843DD02
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 06:32:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4727-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1749277954.441862,VS0,VE754
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cfbc237eedfb5dd4540782cf844935507ec41b62
+Expires: Sat, 07 Jun 2025 06:37:35 GMT
+Source-Age: 0
+
+]
+[2025-06-07 12:02:35,095: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 12:02:35,095: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 12:02:35,095: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:02:35,095: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:02:35,095: INFO: common: created directory at: artifacts]
+[2025-06-07 12:02:35,095: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 12:02:35,095: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Dataset\\samsum_dataset']
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 23, in <module>
+    data_validation.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_validation_2.py", line 14, in main
+    data_validation.validate_all_files_exist()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_validation.py", line 31, in validate_all_files_exist
+    raise e
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_validation.py", line 15, in validate_all_files_exist
+    all_files = os.listdir(os.path.join("artifacts", "data_ingestion", "Dataset", "samsum_dataset"))
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Dataset\\samsum_dataset'
+[2025-06-07 12:03:32,735: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 12:03:32,983: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 12:03:32,999: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:03:32,999: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:03:32,999: INFO: common: created directory at: artifacts]
+[2025-06-07 12:03:32,999: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 12:03:35,003: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 4FD4:3F47F4:1039B5:27540A:6843DD3E
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 06:33:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10240-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1749278015.566156,VS0,VE881
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: aca24b5b44074244b5703ee8d1e01e9cf87ef691
+Expires: Sat, 07 Jun 2025 06:38:35 GMT
+Source-Age: 1
+
+]
+[2025-06-07 12:03:35,120: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 12:03:35,120: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 12:03:35,120: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:03:35,120: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:03:35,120: INFO: common: created directory at: artifacts]
+[2025-06-07 12:03:35,120: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 12:03:35,129: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 12:03:35,130: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 12:03:35,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:03:35,132: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:03:35,133: INFO: common: created directory at: artifacts]
+[2025-06-07 12:03:35,133: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 12:03:36,556: ERROR: main: Directory artifacts/data_ingestion/samsum_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 35, in <module>
+    data_validation.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\data_transformation_3.py", line 15, in main
+    data_transformation.convert()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\data_transformation.py", line 25, in convert
+    dataset_samsum =  load_from_disk(self.config.data_path)
+  File "c:\I39106\DSP\Text-Summarization_NLP-main\myenv\lib\site-packages\datasets\load.py", line 2148, in load_from_disk
+    raise FileNotFoundError(
+FileNotFoundError: Directory artifacts/data_ingestion/samsum_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.
+[2025-06-07 12:08:48,805: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 12:08:49,070: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 12:08:49,070: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:08:49,084: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:08:49,084: INFO: common: created directory at: artifacts]
+[2025-06-07 12:08:49,086: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 12:08:50,528: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3E72:3F9B62:1E30A:4051B:6843DD02
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 06:38:50 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4748-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1749278331.597553,VS0,VE342
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c7cb816d338ae67891526383e41880b662f644c6
+Expires: Sat, 07 Jun 2025 06:43:50 GMT
+Source-Age: 0
+
+]
+[2025-06-07 12:08:50,656: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 12:08:50,656: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 12:08:50,659: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:08:50,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:08:50,661: INFO: common: created directory at: artifacts]
+[2025-06-07 12:08:50,663: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 12:08:50,667: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 12:08:50,667: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 12:08:50,670: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 12:08:50,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 12:08:50,671: INFO: common: created directory at: artifacts]
+[2025-06-07 12:08:50,673: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 12:08:55,061: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 16:47:42,194: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 17:11:25,728: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:12:43,324: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:12:43,328: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:12:43,331: INFO: common: created directory at: artifacts]
+[2025-06-07 17:12:43,333: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:19:09,910: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:19:09,914: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:19:09,915: INFO: common: created directory at: artifacts]
+[2025-06-07 17:19:09,916: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:21:32,994: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:21:32,998: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:21:33,000: INFO: common: created directory at: artifacts]
+[2025-06-07 17:21:33,001: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:21:53,982: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:21:53,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:21:53,988: INFO: common: created directory at: artifacts]
+[2025-06-07 17:21:53,989: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:23:41,523: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:23:41,526: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:23:41,532: INFO: common: created directory at: artifacts]
+[2025-06-07 17:23:41,534: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:24:33,588: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:24:33,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:24:33,600: INFO: common: created directory at: artifacts]
+[2025-06-07 17:24:33,601: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:26:14,580: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 17:26:27,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:26:27,574: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:26:27,577: INFO: common: created directory at: artifacts]
+[2025-06-07 17:26:27,579: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:32:03,748: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:32:03,752: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:32:03,754: INFO: common: created directory at: artifacts]
+[2025-06-07 17:32:03,757: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:34:45,658: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:34:45,662: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:34:45,664: INFO: common: created directory at: artifacts]
+[2025-06-07 17:34:45,666: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:38:51,894: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 17:39:21,305: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:39:21,308: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:39:21,310: INFO: common: created directory at: artifacts]
+[2025-06-07 17:39:21,312: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:39:41,168: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:39:41,170: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:39:41,174: INFO: common: created directory at: artifacts]
+[2025-06-07 17:39:41,176: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:42:04,817: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:42:04,825: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:42:04,827: INFO: common: created directory at: artifacts]
+[2025-06-07 17:42:04,829: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 17:43:58,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 17:43:58,437: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 17:43:58,439: INFO: common: created directory at: artifacts]
+[2025-06-07 17:43:58,442: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 19:59:17,168: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 19:59:17,593: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 19:59:17,596: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 19:59:17,598: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 19:59:17,599: INFO: common: created directory at: artifacts]
+[2025-06-07 19:59:17,600: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 19:59:20,240: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 657D:2C0233:1ABECE:3C8D90:68444CBF
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 14:29:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1749306559.113577,VS0,VE739
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9f9b5fd318837c389f7f83321e1ab1df2e2dfa57
+Expires: Sat, 07 Jun 2025 14:34:19 GMT
+Source-Age: 0
+
+]
+[2025-06-07 19:59:20,349: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 19:59:20,349: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 19:59:20,351: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 19:59:20,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 19:59:20,353: INFO: common: created directory at: artifacts]
+[2025-06-07 19:59:20,354: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 19:59:20,358: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 19:59:20,359: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 19:59:20,362: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 19:59:20,367: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 19:59:20,369: INFO: common: created directory at: artifacts]
+[2025-06-07 19:59:20,371: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 19:59:23,931: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 20:06:21,080: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:06:23,401: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 20:06:23,403: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:06:23,407: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:06:23,412: INFO: common: created directory at: artifacts]
+[2025-06-07 20:06:23,413: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 20:06:26,990: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 81D0:32D65D:1B8DBC:358456:68444E5F
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 14:36:25 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4749-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1749306985.933522,VS0,VE870
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a4b2685415f04b0cad46f1e0d5acb4c33f29449a
+Expires: Sat, 07 Jun 2025 14:41:25 GMT
+Source-Age: 1
+
+]
+[2025-06-07 20:06:27,104: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 20:06:27,104: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 20:06:27,109: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:06:27,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:06:27,109: INFO: common: created directory at: artifacts]
+[2025-06-07 20:06:27,109: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 20:06:27,114: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 20:06:27,114: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 20:06:27,116: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:06:27,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:06:27,119: INFO: common: created directory at: artifacts]
+[2025-06-07 20:06:27,121: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 20:06:30,907: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 20:06:30,908: INFO: main: <<< Step Model Training step start >>>
+
+
+ ]
+[2025-06-07 20:06:30,912: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:06:30,915: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:06:30,916: INFO: common: created directory at: artifacts]
+[2025-06-07 20:06:30,918: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:06:30,919: ERROR: main: "'ConfigBox' object has no attribute 'evaluation_strategy'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'evaluation_strategy'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'evaluation_strategy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 49, in <module>
+    model_training.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\model_trainer_4.py", line 13, in main
+    model_trainer_config= config.get_model_trainer_config()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\config\configuration.py", line 73, in get_model_trainer_config
+    eval_steps= params.evaluation_strategy,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation_strategy'"
+[2025-06-07 20:08:34,729: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:08:36,590: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 20:08:36,590: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:08:36,602: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:08:36,602: INFO: common: created directory at: artifacts]
+[2025-06-07 20:08:36,602: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 20:08:38,471: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 81D0:32D65D:1B8DBC:358456:68444E5F
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 14:38:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4725-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1749307118.143783,VS0,VE1
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 7bc156448d1cef20f2db087920d61c26312150bc
+Expires: Sat, 07 Jun 2025 14:43:38 GMT
+Source-Age: 133
+
+]
+[2025-06-07 20:08:38,580: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 20:08:38,582: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 20:08:38,585: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:08:38,586: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:08:38,586: INFO: common: created directory at: artifacts]
+[2025-06-07 20:08:38,589: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 20:08:38,593: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 20:08:38,593: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 20:08:38,595: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:08:38,597: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:08:38,597: INFO: common: created directory at: artifacts]
+[2025-06-07 20:08:38,598: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 20:08:43,187: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 20:08:43,187: INFO: main: <<< Step Model Training step start >>>
+
+
+ ]
+[2025-06-07 20:08:43,191: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:08:43,195: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:08:43,196: INFO: common: created directory at: artifacts]
+[2025-06-07 20:08:43,197: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:08:50,467: ERROR: main: 'ModelTrainerConfig' object has no attribute 'per_device_eval_batch_size']
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 49, in <module>
+    model_training.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\model_trainer_4.py", line 15, in main
+    model_trainer_config.train()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\components\model_trainer.py", line 26, in train
+    per_device_eval_batch_size=self.config.per_device_eval_batch_size, weight_decay= self.config.weight_decay,
+AttributeError: 'ModelTrainerConfig' object has no attribute 'per_device_eval_batch_size'
+[2025-06-07 20:13:07,963: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:13:09,689: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 20:13:09,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:13:09,689: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:13:09,689: INFO: common: created directory at: artifacts]
+[2025-06-07 20:13:09,689: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 20:13:11,915: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 657D:2C0233:1ABECE:3C8D90:68444CBF
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 14:43:11 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10227-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1749307391.222270,VS0,VE330
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cdcb889225e921c42374044bc17089c814e20877
+Expires: Sat, 07 Jun 2025 14:48:11 GMT
+Source-Age: 0
+
+]
+[2025-06-07 20:13:12,015: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 20:13:12,015: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 20:13:12,025: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:13:12,025: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:13:12,025: INFO: common: created directory at: artifacts]
+[2025-06-07 20:13:12,025: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 20:13:12,033: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 20:13:12,033: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 20:13:12,036: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:13:12,038: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:13:12,038: INFO: common: created directory at: artifacts]
+[2025-06-07 20:13:12,039: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 20:13:16,431: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 20:13:16,431: INFO: main: <<< Step Model Training step start >>>
+
+
+ ]
+[2025-06-07 20:13:16,432: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:13:16,434: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:13:16,434: INFO: common: created directory at: artifacts]
+[2025-06-07 20:13:16,436: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:13:16,436: ERROR: main: ModelTrainerConfig.__init__() missing 1 required positional argument: 'per_device_eval_batch_size']
+Traceback (most recent call last):
+  File "C:\I39106\DSP\Text-Summarization_NLP-main\main.py", line 49, in <module>
+    model_training.main()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\pipeline\model_trainer_4.py", line 13, in main
+    model_trainer_config= config.get_model_trainer_config()
+  File "c:\i39106\dsp\text-summarization_nlp-main\src\TextSummarizer\config\configuration.py", line 63, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+TypeError: ModelTrainerConfig.__init__() missing 1 required positional argument: 'per_device_eval_batch_size'
+[2025-06-07 20:14:16,907: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:14:18,829: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 20:14:18,831: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:14:18,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:14:18,834: INFO: common: created directory at: artifacts]
+[2025-06-07 20:14:18,834: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 20:14:20,763: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 81D0:32D65D:1B8DBC:358456:68444E5F
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 14:44:20 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4734-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1749307460.343040,VS0,VE338
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c2197d14983a6821d2d9e3fb5059d8e46c6bb0ce
+Expires: Sat, 07 Jun 2025 14:49:20 GMT
+Source-Age: 0
+
+]
+[2025-06-07 20:14:20,873: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 20:14:20,873: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 20:14:20,875: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:14:20,875: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:14:20,875: INFO: common: created directory at: artifacts]
+[2025-06-07 20:14:20,875: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 20:14:20,883: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 20:14:20,884: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 20:14:20,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:14:20,888: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:14:20,889: INFO: common: created directory at: artifacts]
+[2025-06-07 20:14:20,890: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 20:14:24,967: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 20:14:24,969: INFO: main: <<< Step Model Training step start >>>
+
+
+ ]
+[2025-06-07 20:14:24,972: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:14:24,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:14:24,976: INFO: common: created directory at: artifacts]
+[2025-06-07 20:14:24,976: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:18:22,879: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:18:22,893: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:18:22,898: INFO: common: created directory at: artifacts]
+[2025-06-07 20:18:22,898: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:22:16,671: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:22:29,984: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:22:29,988: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:22:29,991: INFO: common: created directory at: artifacts]
+[2025-06-07 20:22:29,991: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:25:11,714: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:25:11,719: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:25:11,723: INFO: common: created directory at: artifacts]
+[2025-06-07 20:25:11,726: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:25:45,221: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:25:48,034: INFO: main: <<< Step Data Ingestion step start >>>
+
+
+ ]
+[2025-06-07 20:25:48,038: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:25:48,041: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:25:48,042: INFO: common: created directory at: artifacts]
+[2025-06-07 20:25:48,044: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-07 20:25:51,650: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8267030
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b1028812d06c7e37303dfc30cee9a06e2851d35065b7ac14be8eb97979bce796"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 657D:2C0233:1ABECE:3C8D90:68444CBF
+Accept-Ranges: bytes
+Date: Sat, 07 Jun 2025 14:55:50 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10235-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1749308150.951455,VS0,VE290
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3e381b98a78db21e5cd219eaa28a5016f1de6663
+Expires: Sat, 07 Jun 2025 15:00:50 GMT
+Source-Age: 0
+
+]
+[2025-06-07 20:25:51,817: INFO: main: <<< Step Data Ingestion step completed >>
+
+>]
+[2025-06-07 20:25:51,817: INFO: main: <<< Step Data Validation step start >>>
+
+
+ ]
+[2025-06-07 20:25:51,821: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:25:51,823: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:25:51,824: INFO: common: created directory at: artifacts]
+[2025-06-07 20:25:51,825: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-07 20:25:51,830: INFO: main: <<< Step Data Validation step completed >>
+
+>]
+[2025-06-07 20:25:51,830: INFO: main: <<< Step Data Transformation step start >>>
+
+
+ ]
+[2025-06-07 20:25:51,833: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:25:51,835: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:25:51,836: INFO: common: created directory at: artifacts]
+[2025-06-07 20:25:51,837: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-07 20:25:57,971: INFO: main: <<< Step Data Transformation step completed >>
+
+>]
+[2025-06-07 20:25:57,971: INFO: main: <<< Step Model Training step start >>>
+
+
+ ]
+[2025-06-07 20:25:57,976: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:25:57,979: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:25:57,980: INFO: common: created directory at: artifacts]
+[2025-06-07 20:25:57,981: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:29:50,853: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 20:29:51,618: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 20:29:51,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 20:29:51,627: INFO: common: created directory at: artifacts]
+[2025-06-07 20:29:51,630: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-07 20:45:15,568: INFO: config: PyTorch version 2.7.0 available.]
+[2025-06-07 21:09:49,129: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 21:09:49,140: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 21:09:49,146: INFO: common: created directory at: artifacts]
+[2025-06-07 21:09:49,152: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-07 21:23:48,231: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 21:23:48,236: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 21:23:48,239: INFO: common: created directory at: artifacts]
+[2025-06-07 21:23:48,241: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-07 21:29:15,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-07 21:29:15,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-07 21:29:15,442: INFO: common: created directory at: artifacts]
+[2025-06-07 21:29:15,444: INFO: common: created directory at: artifacts/model_evaluation]
